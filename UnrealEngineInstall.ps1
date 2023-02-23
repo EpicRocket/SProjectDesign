@@ -13,16 +13,15 @@ if (-not (Test-Path ".\.git")) {
     Write-Output "Git Clone UnrealEngine5.1..."
     Pop-Location
     git clone https://github.com/dek0058/UnrealEngine5.1.git $ClientName
+    Push-Location $ClientName
 }
-
-Push-Location $ClientName
 
 if (-not (Test-Path "Setup.bat")) {
     Write-Output "Not install Unreal Engine... please checking folder"
-    Exit-PSSession
+    Stop-Process -Id $PID
 }
 
 Write-Output "Unreal Engine Install..."
-call Setup.bat
+Start-Process -FilePath Setup.bat -ArgumentList "--force" -Wait
 
 Write-Output "Unreal Engine Install Complete!"
