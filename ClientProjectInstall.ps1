@@ -15,7 +15,7 @@ if (-not (Test-Path "GenerateProjectFiles.bat")) {
 
 if (-not (Test-Path $ProjectName)) {
     Write-Output "Create $ProjectName folder..."
-    New-Item -ItemType Directory -Name $SProject
+    New-Item -ItemType Directory -Name $ProjectName
 }
 
 Push-Location $ProjectName
