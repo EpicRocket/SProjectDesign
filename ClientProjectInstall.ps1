@@ -25,6 +25,8 @@ if (-not (Test-Path ".\.git")) {
     Pop-Location
     git clone https://github.com/dek0058/SProject.git $ProjectName
     Push-Location $ProjectName
+
+    git submodule update --init --recursive
 }
 
 Pop-Location
