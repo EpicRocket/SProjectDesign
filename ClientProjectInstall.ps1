@@ -32,6 +32,6 @@ if (-not (Test-Path ".\.git")) {
 Pop-Location
 
 Write-Output "Generate Project Files..."
-Start-Process -FilePath GenerateProjectFiles.bat -Wait
+Start-Process -FilePath GenerateProjectFiles.bat
 
 Write-Output "$ProjectName create Complete!"
