@@ -1,3 +1,7 @@
 [submodule "Tools/SourceCopyTool"]
 	path = Tools/SourceCopyTool
 	url = https://github.com/dek0058/SourceCopyTool.git
+[submodule "ThirdParty/xlnt"]
+	path = ThirdParty/xlnt
+	url = https://github.com/tfussell/xlnt.git
+	branch = master
