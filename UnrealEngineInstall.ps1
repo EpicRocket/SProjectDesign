@@ -12,7 +12,7 @@ Push-Location $ClientName
 if (-not (Test-Path ".\.git")) {
     Write-Output "Git Clone UnrealEngine5.1..."
     Pop-Location
-    git clone https://github.com/dek0058/UnrealEngine5.1.git $ClientName
+    git clone https://github.com/dek0058/UnrealEngine5.git $ClientName
     Push-Location $ClientName
 }
 
