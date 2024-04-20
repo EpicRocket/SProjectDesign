@@ -1,7 +1,7 @@
 
 # SProjectDesign
 
-Install.bat 실행 바람..
+Install.bat을 절때 실행시키지 마세요. 지금 수정되어있지 않아 정상 작동되지 않습니다.
 
 ...
 #Initailize     초기화
